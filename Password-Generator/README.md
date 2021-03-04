@@ -1,92 +1,32 @@
-# 03 JavaScript: Password Generator
+# Password Generator
 
-## Your Task
+## My Task
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+This task requires me to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+## How it works
 
-## User Story
+When you load the page you will see the Password Generator webpage (screenshot below). The webpage is essentially 4 divs. One big div as the page/body with the title "Password Generator", a smaller div inside that (the box on screen) with the subtitle "Generate a Password" and 2 smaller divs inside of that box, one with a textarea and the other with a button to generate the password.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+<img src=".\Assets\images\001.PNG">
 
-## Acceptance Criteria
+When the button is clicked a fucntion runs that will bring up a prompt asking how many characters would you like the password to be. The prompt also advises that the password must include 8 to 128 characters. If the user's request a password with less than 8 or more than 128 characters, an alert pops up advising of the requeired length and the user is brought about to the oringinal prompt asking for the length.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+<img src=".\Assets\images\003.PNG">
+(In the example above, the user requested the password length to be 10 characters long.)
 
-## Mock-Up
+Next the user will be met with a series of confirm prompts that asks if the user would like the password to include lower cass letters, upper case letters, number and special characters. The user can click "ok" for yes to include the character in question, or "cancel" to deny to use of said characters.
 
-The following image shows the web application's appearance and functionality:
+<img src=".\Assets\images\004.PNG">
+<img src=".\Assets\images\005.PNG">
+<img src=".\Assets\images\006.PNG">
+<img src=".\Assets\images\007.PNG">
+(in the examples above, the user selected "ok" to every confirm prompt, requesting the password to include all of the character types.)
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+Once the finally confirm prompt is answered, a password will be generated that only includes the characters the user said yes to. The password is also guaranteed to include atleast one of the requests character types.
 
-## Grading Requirements
+<img src=".\Assets\images\002.PNG">
 
-This homework is graded based on the following criteria: 
+(In the screenshot above you will see that a password is generated that includes every character type that was requested.)
 
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+link to webpage in github: <a href = "https://cjose26.github.io/Password-Generator/"> Password Generator</a> 
